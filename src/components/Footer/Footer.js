@@ -27,62 +27,62 @@ export default function Footer(props) {
     [classes.footerWhiteFont]: whiteFont
   });
   return (
-    <footer className={footerClasses}>
-      <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
+      <footer className={footerClasses}>
+        <div className={classes.container}>
+          <div className={classes.left}>
+            <List className={classes.list}>
+              <ListItem className={classes.inlineBlock}>
+                <a
+                    href="https://targetonline.co.za"
+                    className={classes.block}
+                    target="_blank"
+                >
+                  Taregt Online (PTY) LTD
+                </a>
+              </ListItem>
+              <ListItem className={classes.inlineBlock}>
+                <a
+                    href="https://targetonline.co.za#about-us"
+                    className={classes.block}
+                    target="_blank"
+                >
+                  About us
+                </a>
+              </ListItem>
+              <ListItem className={classes.inlineBlock}>
+                <a
+                    href="https://www.youtube.com/channel/UCPXwn709gmxylXeGiPCRjvA"
+                    className={classes.block}
+                    target="_blank"
+                >
+                  YouTube Channel
+                </a>
+              </ListItem>
+              <ListItem className={classes.inlineBlock}>
+                <a
+                    href="https://web.facebook.com/Web-Development-Services-2078283995516794/"
+                    className={classes.block}
+                    target="_blank"
+                >
+                  Facebook Page
+                </a>
+              </ListItem>
+            </List>
+          </div>
+          <div className={classes.right}>
+            &copy; {1900 + new Date().getYear()} , made with{" "}
+            <Favorite className={classes.icon} /> by{" "}
+            <a
+                href="https://targetonline.co.za"
+                className={aClasses}
                 target="_blank"
-              >
-                Creative Tim
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
-          </List>
+            >
+              Taregt Online (PTY) LTD
+            </a>{" "}
+            for a better web.
+          </div>
         </div>
-        <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=mkr-footer"
-            className={aClasses}
-            target="_blank"
-          >
-            Creative Tim
-          </a>{" "}
-          for a better web.
-        </div>
-      </div>
-    </footer>
+      </footer>
   );
 }
 
