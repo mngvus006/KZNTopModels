@@ -16,13 +16,17 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
-import TopModelsArchive from "./Sections/TopModelsArchive.js"
+
+// Sections for this page
+import ProductSection from "./Sections/ProductSection.js";
+import TeamSection from "./Sections/TeamSection.js";
+
 
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
-export default function TopModelsLandingPage(props) {
+export default function Experimenting(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -39,7 +43,7 @@ export default function TopModelsLandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/ModelClass.jpg")}>
+      <Parallax filter image={require("assets/img/Runway.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -67,11 +71,12 @@ export default function TopModelsLandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <TopModelsArchive/>
+          <ProductSection />
+          <TeamSection />
+         
         </div>
       </div>
       <Footer />
     </div>
   );
 }
-

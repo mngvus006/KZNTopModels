@@ -27,7 +27,7 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem} buttonIcon={Apps}>
-        <Link to="kzn-top-models" className={classes.link}>
+        <Link to="profile-page" className={classes.link}>
           <Button
             href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
             color="transparent"

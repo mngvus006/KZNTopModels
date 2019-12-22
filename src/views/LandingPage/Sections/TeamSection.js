@@ -1,4 +1,6 @@
 import React from "react";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -16,9 +18,7 @@ import CardFooter from "components/Card/CardFooter.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/avatar.jpg";
 import team2 from "assets/img/faces/owner.JPG";
-import team3 from "assets/img/faces/kendall.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -34,6 +34,7 @@ export default function TeamSection() {
       <h2 className={classes.title}>Here is our team</h2>
       <div>
         <GridContainer>
+          {/***
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
@@ -76,25 +77,47 @@ export default function TeamSection() {
                 </Button>
               </CardFooter>
             </Card>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          </GridItem >
+         ***/}
+          <GridItem >
             <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team2} alt="..." className={imageClasses} />
-              </GridItem>
-              <h4 className={classes.cardTitle}>
-                Christian Louboutin
-                <br />
-                <small className={classes.smallTitle}>Designer</small>
-              </h4>
+              
+                <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                  <img src={team2} alt="..." className={imageClasses} />
+                </GridItem>
+                <h4 className={classes.cardTitle}>
+                  Zakhele Zulu Khumalo
+                  <br />
+                  <small className={classes.smallTitle}>The Founder</small>
+                </h4>
+              
+
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  He is an entrepreneur that is very passionate about community
+                  and youth development. He is a property developer in KZN and
+                  also an investor in multi level of business ventures. He’s a
+                  performing artist at the Playhouse Opera Company, also a Head
+                  of Star Quality Acting Academy in KZN. Zakhele is a coca cola
+                  brand soul ambassador which is a programme introduced by Coca
+                  Cola Beverages South Africa for community and youth
+                  development. Zakhele studied International Marketing
+                  Management through IMM Graduates School. Zakhele was born in
+                  Ezimbokwedweni KZN, his late Father Prince Themba Zulu Khumalo
+                  was originally from Nongoma KZN. Zakhele’s working experience
+                  has played a big role in his leadership skills. He has worked
+                  for the following companies in various roles: Edcon retail,
+                  First National Bank & Coca Cola Beverages South Africa.
+                  Zakhele is involved in the fashion and modelling development
+                  in collaboration with KZN Top Model & Fezile Mdletshe Agency.
+                  Together with KZNTM & FMA he’s developed raw models from
+                  various local KZN Municipalities such as: Dr Nkosazana Dlamini
+                  Zuma Municipality, Ukhahlamba Municipality and currently
+                  running an annual project in the whole of KZN in fashion and
+                  talent supported by NLC.
                 </p>
               </CardBody>
+              {/***
               <CardFooter className={classes.justifyCenter}>
                 <Button
                   justIcon
@@ -111,8 +134,12 @@ export default function TeamSection() {
                   <i className={classes.socials + " fab fa-linkedin"} />
                 </Button>
               </CardFooter>
+               ***/
+              }
             </Card>
           </GridItem>
+
+          
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
@@ -156,6 +183,7 @@ export default function TeamSection() {
               </CardFooter>
             </Card>
           </GridItem>
+          
         </GridContainer>
       </div>
     </div>

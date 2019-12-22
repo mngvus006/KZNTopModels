@@ -3,9 +3,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import Camera from "@material-ui/icons/CameraAltOutlined";
+import VerifiedUser from "@material-ui/icons/CardMembershipOutlined";
+import Fingerprint from "@material-ui/icons/PeopleOutlineOutlined";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -88,7 +88,7 @@ export default function ProductSection() {
               description="We offer workshops and mentorship to become KZN Top model ambassador. Winner of KZN Top Model beauty pageant and Runway Show will participate in KZN Fashion Council, Durban Fashion Fair.
              Become the face of Strategic Marketing, Digital Media and PR campaigns
              High prize cash, scholarship and prize/s 4 night cruise from MSC "
-              icon={Chat}
+              icon={Camera}
               iconColor="info"
               vertical
             />
@@ -112,6 +112,26 @@ export default function ProductSection() {
             />
           </GridItem>
         </GridContainer>
+      </div>
+
+      <div>
+      <GridContainer justify="center">
+        <GridItem cs={12} sm={12} md={8}>
+          <h2 className={classes.title}>Work with us</h2>
+          <h4 className={classes.description}>
+            We aspire work relations with local and international businesses to
+            create activities that feature a variety of regional and
+            international experiences and many more. Our events support our
+            communities, promote our local businesses and sponsor partners, and
+            it further shine a spotlight on our wonderful work and youth growth
+            activities.
+          </h4>
+
+          <h4 className={classes.description}>
+          <a href = "mailto: info@kzntopmodel.co.za">Send Email</a>
+          </h4>
+        </GridItem>
+      </GridContainer>
       </div>
     </div>
   );
