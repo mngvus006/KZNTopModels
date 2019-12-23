@@ -77,7 +77,7 @@ export default function Footer(props) {
                 className={aClasses}
                 target="_blank"
             >
-              Taregt Online (PTY) LTD
+              Target Online (PTY) LTD
             </a>{" "}
             for a better web.
           </div>

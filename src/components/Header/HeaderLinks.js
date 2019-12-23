@@ -29,7 +29,7 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem} buttonIcon={Apps}>
         <Link to="profile-page" className={classes.link}>
           <Button
-            href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+            href="#"
             color="transparent"
             target="_blank"
             className={classes.navLink}
@@ -39,14 +39,39 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="https://firebasestorage.googleapis.com/v0/b/fezile-fashion-skills-academy.appspot.com/o/assets%2FFEES%20SCHEDULE%202020_part%201.pdf?alt=media&token=d5911680-1e41-4764-bffc-31244cb59649"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <CloudDownload className={classes.icons} /> Membership form
-        </Button>
+        <CustomDropdown
+          noLiPadding
+          buttonText="Membership forms"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          buttonIcon={CloudDownload}
+          dropdownList={[
+            <a
+              href="https://storage.cloud.google.com/kzn-model-contract/KZNTM20%20ENTRY%20FORM.pdf"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              KZN Top Model 2020 ENTRY FORM
+            </a>,
+            <a
+              href="https://storage.cloud.google.com/kzn-model-contract/KZN%20TOP%20MODEL%20Contract%202.pdf"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              KZN Top Model Contract
+             
+            </a>,
+            <a
+              href="https://storage.cloud.google.com/kzn-model-contract/KZNTM%20DESIGNER%20MEMBERSHIP.pdf"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+            KZN Top Designer Membership
+            </a>
+          ]}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">

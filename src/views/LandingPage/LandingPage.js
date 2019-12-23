@@ -25,7 +25,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="KZN Top Model"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
