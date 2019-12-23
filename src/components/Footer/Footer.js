@@ -37,7 +37,7 @@ export default function Footer(props) {
                     className={classes.block}
                     target="_blank"
                 >
-                  Taregt Online (PTY) LTD
+                  Target Online (PTY) LTD
                 </a>
               </ListItem>
               <ListItem className={classes.inlineBlock}>
